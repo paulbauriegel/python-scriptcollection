@@ -1,0 +1,2786 @@
+IT-Sicherheit Fragen 
+
+
+ 
+
+
+Einführung 
+
+
+1. Was ist der Unterschied zwischen Datensicherheit und Datensicherung? 
+
+
+Datensicherung (backup): 
+
+
+Schutz vor unbeabsichtigtem Datenverlust durch höhere Gewalt, technisches Versagen oder 
+Fahrlässigkeit (nicht aber vorsätzliches Handeln), typischerweise realisiert durch: 
+
+
+• Backups der Daten (z.B. Mirroring, Tape Library, Offsite-Backup ...) 
+
+
+• Vorhalten von Ersatz-Hardware (Cold/Hot Standby-Systeme, Ersatz-Geräte, Ausweich-
+Rechenzentrum, redundante Netzanbindung ...) 
+
+
+Datensicherheit (Protection): 
+
+
+Eigenschaft eines funktionssicheren Systems, nur solche Systemzustände anzunehmen, die zu 
+keinem unautorisierten Zugriff auf Systemressourcen und insbesondere auf Daten führen 
+
+
+ 
+
+
+2. Was ist der Unterschied zwischen Informations- und Datensicherheit? 
+
+
+Informationssicherheit (Information Security): 
+
+
+Eigenschaft eines funktionssicheren Systems, nur solche Systemzustände anzunehmen, die zu 
+keiner unautorisierten Informationsveränderung oder -gewinnung führen. 
+
+
+Datensicherheit (Protection): 
+
+
+s.o. 
+
+
+ 
+
+
+3. Was ist der Unterschied zwischen Informationssicherheit und Datenschutz? 
+
+
+Informationssicherheit (Information Security): s.o. 
+
+
+Datenschutz (Privacy): 
+
+
+bezieht sich auf personen-bezogene oder -beziehbare Daten* und den rechtlichen und technischen 
+Schutz der betroffenen (natürlichen) Person gegen unrechtmäßige Erhebung, Verarbeitung, 
+Speicherung, Nutzung, Übermittlung... 
+
+
+• „informationelle Selbstbestimmung“, Datenschutzgesetze (BDSG, LDSG) 
+
+
+• Privacy Enhancing Technologies zur anonymen/ pseudonymen Dienst-Nutzung 
+
+
+ 
+
+
+4. Welche Schutzziele kennen Sie? Erläutern Sie diese und geben Sie jeweils 1 Beispiel. 
+
+
+• Vertraulichkeit (Confidentiality) 
+
+
+Schutz gegen unberechtigte Kenntnisnahme von Informationen 
+
+
+Bsp: E-Mail-Inhalt, Personaldaten, Geschäftsdaten, personenbezogene Daten 
+
+
+• Integrität (Integrity) 
+
+
+Sicherstellung der Unversehrtheit/Unverfälschheit von Daten oder Programmen und Sicherstellung 
+der korrekten Funktionsweise 
+
+
+Bsp: Bankdaten, Klausurnoten 
+
+
+• Verfügbarkeit (Availability) 
+
+
+Alle Daten sowie die zur Verarbeitung notwendige Systeme und Ressourcen (z.B. Speicher, CPUs) 
+müssen jederzeit verfügbar und funktionsbereit sein, wenn ein autorisierter Benutzer darauf 
+zugreifen will. 
+
+
+Bsp: Webshop (Bestellungen), Infrastruktur 
+
+
+• Authentizität (Authenticity) 
+
+
+Sicherstellung der Echtheit von Informationen, Sicherstellung der behaupteten Identität 
+
+
+Bsp: Bankkonto 
+
+
+• Verbindlichkeit/Nachweisbarkeit (Non-Repudiation) 
+
+
+Nachweis für Initiieren einer Aktion oder Erzeugen eines Datums, z.B. Erstellen, Versenden und 
+Empfang von Nachrichten 
+
+
+Bsp: Vertrag 
+
+
+• Privatheit (Privacy), Anonymität (Anonymity) und Pseudonymität (Pseudonymity) 
+
+
+
+Privatheit: Schutz personenbezogener Daten, Recht auf informationelle Selbstbestimmung 
+
+
+Bsp: Kommunikation 
+
+
+Anonymität: weitgehender Schutz gegen Identifizierung 
+
+
+Bsp: Bargeld 
+
+
+Pseudonymität: Schutz gegen namentliche Identifizierung durch Dritte 
+
+
+Bsp: Verwendung Nickname, welches nur durch vertrauenswürdige Stelle zugeordnet werden kann 
+
+
+ 
+
+
+5. Welche kryptografischen Methoden können zur Umsetzung der Schutzziele eingesetzt werden? 
+
+
+Schutzziel | Kryptomethode 
+
+
+Integrität | Hashwerte, Message Authentication Codes, digitale Signaturen 
+
+
+Authentizität | Message Authentication Codes, digitale Signaturen 
+
+
+Verbindlichkeit | digitale Signaturen 
+
+
+Vertraulichkeit | Verschlüsselung 
+
+
+Anonymität/Pseudonymität | Verschlüsselung 
+
+
+ 
+
+
+6. - Geheimdienste sammeln täglich Riesenmengen an Daten. Nennen Sie Beispiele für 
+Überwachungsprogramme und erklären Sie wie Daten durch diese Programme erfasst werden. 
+
+
+Antwort: 
+
+
+PRISM ist ein Telefon- und Internetüberwachungsprogramm der US-Geheimdienste. 
+
+
+Tempora ist der Codename einer britischen Geheimdienstoperation des Government 
+Communications Headquarters (GCHQ) zur Überwachung des weltweiten Telekommunikations- 
+und Internet-Datenverkehrs. Daten werden gesammelt, indem transaltlantische Glasfaserkabel 
+angezapft werden. Auf diesem Weg werden bis zu 600 Millionen Verbindungen täglich erfasst. 
+
+
+Die beiden Überwachungsprogramme PRISM und Tempora sollen zu einem gemeinsamen 
+Geheimdienstprogramm von fünf Staaten (Großbritannien, USA, Kanada, Australien und 
+Neuseeland - die sogenannten Five Eyes) gehören. Die Zusammenarbeit dieser Länder im 
+Geheimdienstbereich ist bereits bekannt durch das seit Jahrzehnten betriebene Projekt Echelon zur 
+weltweiten Überwachung der satellitengestützten Telefon- und Datenkommunikation. 
+
+
+ 
+
+
+ 
+
+
+7. Was ist ein Asset? 
+
+
+->schützenswertes Gut (Information, Daten-Objekt) eines Systems 
+
+
+ 
+
+
+8. Erklären sie die beiden Begriffe Schwachstelle und Verwundbarkeit und rücken sie diese in einen 
+Kontext.(Weakness/Vulnerability) 
+
+
+->Schwachstelle:(prinzipbedingte) Schwäche eines Systems oder ein Punkt, an dem das System 
+
+
+verwundbar werden kann 
+
+
+->Verwundbarkeit: Schwachstelle, über die die Sicherheitsdienste des Systems umgangen, getäuscht 
+
+
+oder unautorisiert modifiziert werden können; 
+
+
+ 
+
+
+9. Was ist eine Bedrohung? 
+
+
+->potentielle Sicherheitsverletzung durch Ausnutzung einer Schwachstelle (um ein 
+
+
+Sicherheitsziel zu gefährden) 
+
+
+ 
+
+
+10. Wie wird das Risiko berechnet? 
+
+
+-> R = E*S E=Wahrscheinlichkeit, dass Schadesnereinis eintritt; S=Der dadurch hervorgerufene 
+Schaden 
+
+
+ 
+
+
+11. Erklären sie den Begriff Angriff und teilen sie ihn in zwei Kategorien ein. Nennen sie 1 Beispiel 
+für jede Kategorie. 
+
+
+->nicht autorisierter Zugriff/Zugriffsversuch auf das System/ein Asset 
+
+
+„An intentional act by which an entity attempts to evade security services and violate the 
+
+
+
+security policy of a system.“ [RFC4949] 
+
+
+• passiver Angriff -> unautorisierte Informationsgewinnung, z.B. Netzwerkverkehr abhören 
+
+
+(Sniffen) 
+
+
+• aktiver Angriff -> unautorisierte Modifikation von Objekten, z.B. Maskierung (Spoofing), d.h. 
+
+
+Vorgeben einer falschen Identität (E-Mail- Adresse spoofen, DNS-Antwort ...), Denial-of-Service 
+
+
+(DoS) 
+
+
+ 
+
+
+12. Benennen sie 3 Schutzmaßnahmen (nach Pfleeger). 
+
+
+-> verhindern (prevent); erschweren (deter) ;auf ein anderes (leichteres) Ziel umlenken, 
+z.B:Honeypot (deflect); erkennen (detect); Wiederherstellung/Schadens-begrenzung (recover) 
+
+
+ 
+
+
+13. Erklären sie das Konzept Defense in depth und nennen sie 2 Beispiele. 
+
+
+->ursprünglich militärisches Konzept, einen Angriff zu verzögern 
+
+
+• Idee: mehrere Schichten von Schutzmaßnahmen gegen Bedrohungen aus dem Netz, die Angriff 
+verhindern 
+
+
+bzw. ihn detektieren und seine Auswirkungen verzögern, so dass Zeit bleibt, Gegenmaßnahmen zu 
+ergreifen 
+
+
+BSP: • Host-basiertes IDS, Logging 
+
+
+• Applikations-spezifische Maßnahmen(z.B.Web-Application-Firewall) 
+
+
+• Network-based IDS: Erkennung von Anomalien oder spez. Angriffen 
+
+
+................S. 36 (0_Einfuehrung) 
+
+
+ 
+
+
+ 
+
+
+14. - Was ist SCAP und Einsatzmöglichkeiten im IT-Sicherheit-Management? 
+
+
+Antwort: 
+
+
+ 
+
+
+ Security Content Automation Protocol (SCAP) ist eine Methode für die Verwendung bestimmter 
+Standards zur automatisierten Vulnerability-Management-, Mess- und Policy-Compliance-
+Auswertung (z. B. FISMA Compliance). Die National Vulnerability Database (NVD) ist das 
+Content-Repository der US-Regierung für SCAP. 
+
+
+ 
+
+
+ SCAP-Komponenten: 
+
+
+ 
+
+
+ - Systembeschreibung wie Sicherheitsrelevante Systemkonfiguration und Sicherheits-Checklisten 
+(Asset): Common Configuration Enumeration (CCE), Common Platform Enumeration (CPE), Open 
+Vulnerability and Assessment Language (OVAL), Extensible Configuration Checklist Description 
+Format (XCCDF) 
+
+
+ 
+
+
+ - Plattformen: Asset Identification, Asset Reporting Format (ARF) 
+
+
+ 
+
+
+ - Angriffsmuster (Threat): CAPEC, MAEC 
+
+
+ 
+
+
+ - Schwachstellen mit Kritikalität: Common Vulnerabilities and Exposures (CVE), Common 
+Configuration Scoring System (CVSS) 
+
+
+ 
+
+
+ (0_Einfuehrung, S. 38, 47) 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+15. - In einer öffentlichen Datenbank wie MITRE werden die Statistiken über die bekannten 
+Sicherheitslücken und Schwachstellen veröffentlicht. Erklären Sie die Begriffe CVE und CVSS, die 
+im Bericht zu sehen sind? 
+
+
+
+Antwort: 
+
+
+ 
+
+
+ Common Vulnerabilities and Exposures (CVE) 
+
+
+ 
+
+
+ dictionary of publicly known information security vulnerabilities* 
+
+
+ 
+
+
+ and exposures 
+
+
+ 
+
+
+ Common Vulnerability Scoring System (CVSS) 
+
+
+ 
+
+
+ standardisierte Metrik zur Bewertung von 
+
+
+ 
+
+
+ • Kritikalität einer Schwachstelle und 
+
+
+ 
+
+
+ • Schwierigkeitsgrad für Angreifer zur Ausnutzung 
+
+
+ 
+
+
+ • mit dem Ziel, 
+
+
+ 
+
+
+ • Relevanz (Risiko) für eigene IT-Umgebung zu bewerten 
+
+
+ 
+
+
+ • Gegenmaßnahmen zu priorisieren 
+
+
+ 
+
+
+ (0_Einfuehrung, S. 39-41) 
+
+
+ 
+
+
+ 
+
+
+16. Welche Informationen enthält ein CVE? 
+
+
+F0-45: 
+
+
+- CVSS-Score: Vektor mit Voraussetzungen und Auswirkungen 
+
+
+- OVAL-Beschreibung: betroffene Systeme, Verwendung von CPE (Commeon Platform 
+Enumeration) 
+
+
+- CWE-Typ (Common Weakness Enumeration = Systematik zur Beschreibung und Klassifikation 
+von Schwachstellen) 
+
+
+ 
+
+
+17. - Welche Kategorien von Exploits kennen Sie? Nennen Sie Bespiele. 
+
+
+Antwort: 
+
+
+ 
+
+
+ - remote Exploits 
+
+
+ 
+
+
+ - Web Application Exploits 
+
+
+ 
+
+
+ - Local & Privilege Escalation Exploits 
+
+
+ 
+
+
+ - DoS & PoC Explots 
+
+
+ 
+
+
+ (0_Einfuehrung, S. 38) 
+
+
+ 
+
+
+ 
+
+
+18. - Wie lassen sich XML-Angriffe realisieren? 
+
+
+Antwort: 
+
+
+ 
+
+
+ - Coercive Parsing 
+
+
+ 
+
+
+
+ - XML Entity Expansion ( XML Bomb) 
+
+
+ 
+
+
+ - XML External Entities/ XML External References 
+
+
+ 
+
+
+ - etc. 
+
+
+ 
+
+
+ Quelle: 
+https://www.bsi.bund.de/DE/Themen/ITGrundschutz/ITGrundschutzKataloge/Inhalt/_content/g/g05/g05183.html 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+Spezielle Bedrohungen 
+
+
+ 
+
+
+Bedrohungen und Angriffe 
+
+
+ 
+
+
+19. - Nach RFC4949 können Bedrohungen nach Ziel der Bedrohung klassifiziert werden. Nennen 
+Sie die 4 verschiedenen Kategorien. 
+
+
+ 
+
+
+ -> AW: Unauthorized Disclosure (= unauthorisierte Informationsgewinnung), Deception 
+(Täuschung), Disruption (Unterbrechung, Störung), Usurpation (widerrechtliche Aneignung) 
+
+
+ 
+
+
+ 
+
+
+20. - Nenne drei Beispiele für Unauthorized Disclosure. (Folie 1_5) 
+
+
+ 
+
+
+ -> Exposure (z.B. un/beabsichtigte Weitergabe sensitiver Daten) 
+
+
+ 
+
+
+ -> Interception (Abfangen der Datenübertragung, Datenträger-Diebstahl) 
+
+
+ 
+
+
+ -> Inference (logisches Schließen, indirekte Informationsgewinnung, z.B. per 
+Verkehrsflussanalyse) 
+
+
+ 
+
+
+ -> Intrusion (Umgehen von Schutzmechanismen, z.B. durch physisches Eindringen, Reverse 
+Engineering) 
+
+
+ 
+
+
+ 
+
+
+21. - Nenne ein Beispiel für Deception. (Folie 1_5) 
+
+
+ 
+
+
+ -> Masquerade (Maskierung, z.B. Spoofing, Trojanisches Pferd) • Falsification (Daten-
+Manipulation) 
+
+
+ 
+
+
+ -> Repudiation (Abstreiten) 
+
+
+ 
+
+
+22. - Nenne ein Beispiel für Disruption. (Folie 1_6) 
+
+
+ 
+
+
+ -> Incapacitation (Untauglich machen: Malicious logic / Schadsoftware, physische Zerstörung, 
+Bedienfehler, HW/SW-Fehler, höhere Gewalt) 
+
+
+ 
+
+
+ -> Corruption (Verfälschung: Tampering = gezielte Änderungen am System) 
+
+
+ 
+
+
+ -> Obstruction (Behinderung durch Überlastung des Systems oder Störung der Kommunikation) 
+
+
+ 
+
+
+ 
+
+
+23. - Nenne ein Beispiel für Usurpation. (Folie 1_6) 
+
+
+ 
+
+
+ -> Misappropriation (Unterschlagung, z.B. unautorisierte Nutzung von Systemressourcen, 
+Datendiebstahl) 
+
+
+ 
+
+
+ -> Misuse (Missbrauch z.B. durch Überschreitung der eigenen Berechtigungen) 
+
+
+ 
+
+
+ 
+
+
+24. - Nennen sie mögliche angriffsszenarien auf eine festplattenverschlüsselung 
+
+
+
+
+
+ -> Den Key aus dem RAM auslesen, wenn der Laptop nicht aus ist 
+
+
+ 
+
+
+ -> Keylogger in MBR installieren (dazu braucht man aber zweimal physischen Zugriff) 
+
+
+ 
+
+
+ -> Phishing 
+
+
+ 
+
+
+ -> Schwache Passwörter bruteforcen 
+
+
+ 
+
+
+ 
+
+
+25. Warum sind einfache EMails nicht vertrauenswürdig. Was muss man einrichten um die 
+Kommuniktion über Email sicher zu machen? 
+
+
+- der Sender einer Mail kann sich als beliebige Person ausgeben und der Inhalt der Mail ist für 
+jedem in Netzwerk sichtbar. 
+
+
+-> zwei Lösungsansätze: Signierung gegen falsche Identifikation, Verschlüsselung gegen Mitlesen. 
+
+
+-> es gibt zwei Technologien dafür OpenPGP/ GnuPG oder das proprietäre S/MIME 
+
+
+ 
+
+
+ 
+
+
+Konkrete Bedrohungen im Netzwerk 
+
+
+ 
+
+
+26. - Auf den Layern des TCP/IP-Modells können verschiedene Angriffe durchgeführt werden. 
+Ordne die jeweilige Bedrohung dem Layer zu: 
+
+
+ 
+
+
+ --> AW jeweils in Klammern 
+
+
+ 
+
+
+ - PRISM (=Physical) 
+
+
+ 
+
+
+ - ARP Cache Poisoning (=Data Link) 
+
+
+ 
+
+
+ - IP Adress Spoofing, Ping of Death (Network) 
+
+
+ 
+
+
+ - SYN-Flood, DDoS (=Transport) 
+
+
+ 
+
+
+ - Spoofing, Session Hijacking, SQL-Injection, XSS, Maleware (Application) 
+
+
+ 
+
+
+ 
+
+
+27. - Wie kann ein DoS-Angriff mittels SYN-Flooding ausgeführt werden und wie kann man solche 
+Angriffe verhindern? 
+
+
+ 
+
+
+ -> Der Angreifer schickt kontinuierlich SYN-Pakete. Bei einem normalen dreistufigen 
+Handshake würde ein Client ebenfalls ein ACK-Paket schicken und damit bestätigen, dass er das 
+SYN/ACK-Paket des Servers erhalten hat. Somit würde die Kommunikation beginnen. Bei einer 
+SYN Flooding Attacke lässt der Angreifer das TCP-Handshake unterminiert, sondern flutet alle 
+Ports auf dem Server andauernd mit neuen SYN-Anfragen bis alle Ressourcen auf dem Server 
+aufgebraucht ist und andere Clients sich nicht mehr mit dem Server verbinden können. 
+
+
+ 
+
+
+ -> Gegenmaßnahmen: 
+
+
+ 
+
+
+ - Recyceln der ältesten halb-offenen TCP Verbindung 
+
+
+ 
+
+
+ - Heuristische Verfahren, Firewall-Systeme Intrusion Detection Prevention System 
+
+
+
+
+
+ - Geo-Verteilung der Infrastruktur, Load-Balancer, 
+
+
+ 
+
+
+ - Honey-Pots, wenn Attacken von einer bestimmten Lokation erkannt werden, können IP-
+Adressen von dieser Geo-Lokation eingeschränkt werden. 
+
+
+ 
+
+
+ Aber: Schwiering zu erkennen, wenn Angriffe von unterschiedlichen IP-Adressen kommen, oder 
+wenn von intern angegriffen wird, sind die Sicherheits-Systeme meistens nicht so gut, wie die 
+externen. 
+
+
+ 
+
+
+ 
+
+
+- Vor- und Nachteile von SYN-Cookies? 
+
+
+ 
+
+
+28. - Was ist DMZ? 
+
+
+ 
+
+
+ DMZ ist eine virtuelle Zone zwischen dem Internet und dem internen Netz, die durch Firewalls 
+abgetrennt ist. 
+
+
+ 
+
+
+ -> Angreifer | Internet | FW | DMZ, ADFS (Authentifizierung), WebApp Proxy |FW | Servernetz, 
+Druckernetz, Clientnetz, Telefonienetz 
+
+
+ 
+
+
+ Standard-Ports sind immer offen und sind die Eintrittspunkte für die Angriffe 
+
+
+ 
+
+
+ 
+
+
+29. Ein Nutzer in Ihrem Unternehmensnetzwerk meint, dass über den Proxy ins Internet zu 
+gelangen "zu umständlich" ist, und nutzt daher eine Verbindung via FPS ins Internet. Leider hat er 
+sich beim Download 
+
+
+ 
+
+
+ des portablen Browser HackedIEE einen Exploit mit installiert. Der Angreifer greift nun große 
+Datenmengen ab. Wie kann das Unternehmen diesen verdächtigen Datenverkehr mitbekommen? 
+
+
+ 
+
+
+ --> Einsatz IPS / IDS 
+
+
+ 
+
+
+ 
+
+
+30. - Was ist ARP Cache Poisoning und Packet Sniffing? Erklären Sie, wie ein Angreifer es 
+ausnutzen kann, um den Netzwerkverkehr mitzulesen. 
+
+
+ 
+
+
+ -> Veränderung der Zuordnung von MAC- und IP-Adresse in der ARP-Tabelle 
+
+
+ 
+
+
+ -> "Man-in-the-Middle-Attack" 
+
+
+ 
+
+
+ -> Unautorisiertes Empfangen von Informationen 
+
+
+ 
+
+
+ 
+
+
+31. - Wie funktionieren DNS Amplification Angriffe? 
+
+
+ 
+
+
+Schadsoftware 
+
+
+ 
+
+
+32. - Erklären Sie den Unterschied zwischen Wurm und Virus 
+
+
+ 
+
+
+ -> AW: - Virus: verbreitet sich selbst durch Anhängen an "Wirtsprogramm" 
+
+
+
+
+
+ - Wurm: verbreitet sich selbst durchs Netzwerk 
+
+
+ 
+
+
+ 
+
+
+33. - Neben des historischen Einsatzes des Trojanischen Pferdes in Troja, wird so auch ein Typ von 
+Schadsoftware genannt. Erklären sie kurz diese Bezeichnung und gehen Sie dafür besonders auf die 
+Art der Verbreitung ein. Geben sie ein aktuelles Beispiel. 
+
+
+ 
+
+
+ --> AW: Trojanische Pferd enthält neben den nützlichen Funktionalitäten versteckte 
+Zusatzfunktionalitäten. Zb: CCleaner 
+
+
+ 
+
+
+ 
+
+
+34. - Schätzen sie die derzeitige Lage zu folgenden Szenarien ein. Orientierung gibt dabei das BSI 
+mit dem Bericht zur Lage der IT-Sicherheit in Deutschland: 
+
+
+ 
+
+
+ - Verbreitung von Schadsoftware via Email. 
+
+
+ 
+
+
+ --> Rückgängig im Allgemeinen, da verbesserte Spam-Filter, Risiken aber bei infizierten 
+PDF/Word-Dokumenten 
+
+
+ 
+
+
+ - Schadsoftware via "Drive-By-Download" einfangen 
+
+
+ 
+
+
+ --> vorwiegend genutzte Schwachstelle. 
+
+
+ 
+
+
+ - Verbreitung via USB-Stick 
+
+
+ 
+
+
+ --> USB-Sticks bieten Risiken, daher sind fremde USB-Sticks immer mit Vorsicht zu genießen. 
+
+
+ 
+
+
+ 
+
+
+35. - Beschreiben Sie wichtige Charakteristika von "Scareware" 
+
+
+ -> angepriesen durch seriös erscheinende Werbung 
+
+
+ -> Täuscht korrekte Funktionsweise vor, Beseitigung der "gefundenen" Probleme funktioniere 
+nur durch Nutzung der kostenpflichtigen Version der Software 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+Human Factors 
+
+
+ 
+
+
+36. - Nenne vier Angriffsvektoren für Human Factors. 
+
+
+ 
+
+
+ - Spam, Ransomware, Social Engineering, Scareware, Phishing 
+
+
+ 
+
+
+ 
+
+
+Ransomware 
+
+
+ 
+
+
+37. - Erkläre die Vorgehensweise von Ransomware 
+
+
+ 
+
+
+ - schränkt Zugriff auf Daten ein (z.B. Bildschirm sperren oder Dateien verschlüsseln) und fordert 
+Lösegeld, um normale Nutzung wiederherzustellen 
+
+
+ 
+
+
+
+
+
+38. - Erkläre den Unterschied zwischen dem BKA-Trojaner und Petya. Wie können diese 
+(abgesehen von Lösegeld-Zahlung) vom Opfer umgangen werden? 
+
+
+ 
+
+
+ - BKA-Trojaner: Zeigt Pop-Over an, sperrt dadurch den Bildschirm. Umgehung: Rechner per 
+Rettungssystem (Boot-Disk) starten und Daten sichern 
+
+
+ 
+
+
+ - Petya: verschlüsselt Master Boot Record und Dateien. Umgehung: Brute-Force des 
+Entschlüsselungs-Keys 
+
+
+ 
+
+
+ 
+
+
+39. - Nenne drei mögliche Probleme, die für das Opfer selbst nach Zahlung des Lösegeldes bei 
+Ransomware auftreten können. 
+
+
+ 
+
+
+ - Erpresser behält Geld und gibt Entschlüsselungs-Key nie heraus 
+
+
+ 
+
+
+ - Erpresser hat keinen Zugriff auf Entschlüsselungs-Key (z.B. aufgrund von Übertragungsfehler / 
+Programmierfehler) 
+
+
+ 
+
+
+ - Es gibt gar keinen validen Entschlüsselungs-Key (aufgrund von Implementierungsfehlern beim 
+Verschlüsselungs-Algorithmus) 
+
+
+ 
+
+
+ - Falls Dateien Geschäftsgeheimnisse enthalten, könnten diese außerdem zum Angreifer kopiert 
+worden sein 
+
+
+ 
+
+
+ - Geschäftsausfall durch lange Antwortzeit 
+
+
+ 
+
+
+ 
+
+
+40. - Was ist der Unterschied zwischen symmetrischer und asymmetrischer Verschlüsslung? 
+
+
+ 
+
+
+ - symmetrisch: selber Schlüssel für Ver- und Entschlüsslung 
+
+
+ 
+
+
+ - asymmetrisch: ein Schlüssel für Verschlüsslung, ein Schlüssel für Entschlüsslung. Schlüssel 
+haben selbe Basis sind aber nicht voneinader ableitbar. 
+
+
+ 
+
+
+ 
+
+
+41. - Für was wird symmetrische / asymmetrische Verschlüsslung bei hybrider Verschlüsslung in 
+Ransomware genutzt? 
+
+
+ 
+
+
+ - symmetrische zur Verschlüsslung der Daten, asymmetrische zum Tausch der asymmetrischen 
+Schlüssel 
+
+
+ 
+
+
+ 
+
+
+42. - Nenne drei Angriffsvektoren bei Ransomware. (Folie 1_16) 
+
+
+ 
+
+
+ -> Mail-Anhang (Office Dokumente mit Makros, Archive ggf. mit Passwort, Programm- oder 
+Skriptdateien) 
+
+
+ 
+
+
+ -> Drive-by-Downloads 
+
+
+ 
+
+
+ -> Schwachstellen in Server-Software 
+
+
+ 
+
+
+
+ -> Nachladen bei schon bestehenden Infektionen 
+
+
+ 
+
+
+ 
+
+
+Phishing 
+
+
+ 
+
+
+43. - Was ist der Unterschied zwischen Phishing und Spear Phishing? (Folie 1_22) 
+
+
+ 
+
+
+ -> Phishing ist sehr allgemein gehalten, sodass es auf eine Vielzahl von Leuten passt und in 
+Massen verschickt werden kann. Phishing wird dabei oft genutzt, um Logindaten zu stehlen. Spear 
+Phishing ist eine speziell auf eine Person oder Firma zugeschnittene Mail, um gezielte Angriffe 
+durchzuführen. Dafür wird meist vorher das Umfeld des Ziels genauer beobachtet, um die Mail an 
+das Ziel perfekt anzupassen. Diese Methode wird oft von regierungsnahen Hackern, oder von 
+Aktivisten genutzt. 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+Man-in-the-Browser 
+
+
+ 
+
+
+44. - Was ist Man-in-the-Browser? 
+
+
+ 
+
+
+ --> AW: Bei Man-in-the-Browser modifizieren Browser-Erweiterungen oder Skripte die geladene 
+Original-Seite. Die auf der Seite eingegebenen Passwörter / PINs / TANs werden dann an die Seite 
+des Angreifers gesendet und abgefangen. Art der Attacke ist Man-in-the-Middle. 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+Authentifikation 
+
+
+ 
+
+
+45. Welche vier verschiedene Wege gibt es, um eine Identität nach zu weisen? 
+
+
+ 
+
+
+ • Authentifikation durch Wissen 
+
+
+ 
+
+
+ • Authentifikation durch physischen Besitz 
+
+
+ 
+
+
+ • Authentifikation durch biometrisches Merkmal 
+
+
+ 
+
+
+ • 2-/3-Faktor-Auth.: Kombination mehrerer Merkmale, etwa Chipkarte + PIN 
+
+
+ 
+
+
+ 
+
+
+46. Was ist der Unterschied von symetrischen und asymetrischen Challenge Response Verfahren? 
+
+
+ 
+
+
+ • symmetrische Verfahren: 
+
+
+ 
+
+
+ • Client und Server haben gemeinsames Geheimnis 
+
+
+ 
+
+
+ • Nachweis der Kenntnis durch Verschlüsseln 
+
+
+ 
+
+
+ • asymmetrische Verfahren 
+
+
+ 
+
+
+ • Server speichert Public Key des Clients 
+
+
+ 
+
+
+ • Nachweis der Kenntnis des Private Key durch Signieren 
+
+
+ 
+
+
+ 
+
+
+47. Welche Angriffs Möglichkeiten gibt es, um an Passwörter von Nutzern zu gelangen? 
+
+
+ 
+
+
+ Online-Angriff: 
+
+
+ 
+
+
+ • nur interaktives Durchprobieren am Login-Formular möglich 
+
+
+ 
+
+
+ • ggf. automatisierbar durch Skript, Frequenz aber begrenzt, z.B. durch 
+
+
+ 
+
+
+ Verzögerungsmechanismen (Wartezeit, IP-, Account-Sperre, Captchas) 
+
+
+ 
+
+
+ • Offline-Angriff: 
+
+
+ 
+
+
+ • Passwort-Datei liegt vor und kann mit Wörterbüchern, paralleler Rechenpower und 
+
+
+ 
+
+
+ Rainbow-Tables leicht angegriffen werden 
+
+
+ 
+
+
+ 
+
+
+48. Wie funktioniert sicheres Passwort-Hashing? 
+
+
+ 
+
+
+ - Salt = zufälliger Wert 
+
+
+ 
+
+
+ - Dienst-Kennung (Fester Wert) -> Optional 
+
+
+ 
+
+
+ 1) Salt || Passwort || Dienst-Kennung durch N-malige Anwendung einer Hashfunktion hashen 
+
+
+
+
+
+ 2) Ergebnis: Hash von Salt, Hashwert und UserID 
+
+
+ 
+
+
+ 3) In Datenbank speichern 
+
+
+ 
+
+
+ - SHA-crypt zum Hashen (SHA-256, SHA512) 
+
+
+ 
+
+
+ - Salt: 16 Zeichen 
+
+
+ 
+
+
+ - Rundenzahl: 1000 ! N < 109 Variabel 
+
+
+ 
+
+
+ - 256 (512) Bit Output 
+
+
+ 
+
+
+ - MD5crypt gilt als unsicher 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+49. Stelle den Ablauf einer Authentifikation mit RADIUS dar. 
+
+
+ 
+
+
+ • NAS ist RADIUS-Client, leitet Authentifizierungs-daten zur Überprüfung weiter 
+
+
+ 
+
+
+ • RADIUS-Server hat Verbindung zu Benutzer-DB/-Verzeichnis, fungiert ggf. als Proxy und 
+
+
+ 
+
+
+ reicht Anfrage weiter -> Roaming-Konzept 
+
+
+ 
+
+
+ • RADIUS-Server kann Parameter für Client festlegen, z.B. VLAN-ID 
+
+
+ 
+
+
+ 
+
+
+50. In welchem Kontext kann RADIUS als Authentifikations Methode genutzt werden? 
+
+
+ 
+
+
+ • VPN 
+
+
+ 
+
+
+ • Port-basierte Authentifizierung am Switch per 802.1X-Protkoll 
+
+
+ 
+
+
+ • Authentifizierung im WLAN, z.B. bei eduroam 
+
+
+ 
+
+
+ 
+
+
+51. Welche Auswirkung hat eine höhere Rundenzahl beim Hashen von Passwörten? 
+
+
+Durch eine höhrere Rundenzahl wird die Hashfunktion mehrfach (je Runde einmal) angewendet. 
+Dadurch lässt sich der Startwert (Kombination aus Salt, Passwort, Dienst-Kennung) schwerer 
+rekonstruieren. 
+
+
+ 
+
+
+52. Was wird unter OpenID verstanden? 
+
+
+ 
+
+
+ • dezentralisiertes Single-Sign On (SSO)-Verfahren für das WWW: Benutzer ... 
+
+
+ 
+
+
+ • hat Account bei Identity Provider (IdP, bei OpenID auch: “OP”) 
+
+
+ 
+
+
+ • will damit Dienst eines Service Providers (Relying Party, RP) nutzen 
+
+
+ 
+
+
+ 
+
+
+53. Stelle den Ablauf einer Authentifikation über OpenID dar. 
+
+
+
+
+
+ 1. GET/POST-Request an RP 
+
+
+ 
+
+
+ 2. 302-Redirect, GET-Request an IdP 
+
+
+ 
+
+
+ 3. Übermittlung Passwort, Kontrolle der zu über-mittelnden Parameter und des Ziels 
+
+
+ 
+
+
+ 4. 302-Redirect an RP, GET-Request mit Angaben zum Benutzer 
+
+
+ 
+
+
+ (freigegebene Attribute) 
+
+
+ 
+
+
+ 5. direkte Kommunikation zwischen 
+
+
+ 
+
+
+ RP und IdP: Diffie-Hellman Schlüsselvereinbarung 
+
+
+ 
+
+
+ (zur Überprüfung Auth Resp.) 
+
+
+ 
+
+
+ 
+
+
+54. Wie funktionieren OTP-Generatoren und warum verwenden manche Firmen diese zur 
+Authentifizierung von Benutzern? 
+
+
+• synchrone Uhren zwischen Gerät und Server 
+
+
+• erzeugt alle 30 oder 60 Sekunden neuen Tokencode 
+
+
+• in Berechnung des Codes per AES gehen ein: 
+
+
+ 
+
+
+ • Zeit 
+
+
+ 
+
+
+ • Geräte spezifisches Geheimnis (Seed, 128 Bit) 
+
+
+ 
+
+
+ • ggf. PIN (Geräte haben Seriennummer, um Zuordnung zu Benutzer zu ermöglichen) 
+
+
+ 
+
+
+ 
+
+
+• verwendbar für Zwei-Faktor-Authentifikation, d.h. zusätzlich zu Benutzername und 
+
+
+Passwort 
+
+
+ 
+
+
+55. Nenne jeweils drei Vor- und Nachteile von OpenID als Single-Sign On Verfahren. 
+
+
+ 
+
+
+ • Vorteile: 
+
+
+ 
+
+
+ • Nutzer kontrolliert übertragene Daten, kann mit versch. Teil-Identitäten agieren 
+
+
+ 
+
+
+ • IdP frei wählbar (sogar Betrieb eines eigenen IdP möglich) 
+
+
+ 
+
+
+ • IdP unabhängig von RP (zumindest in der Theorie) 
+
+
+ 
+
+
+ • OpenID-Provider kann starkes Authentifikations-Verfahren anbieten 
+
+
+ 
+
+
+ • relativ leicht implementierbar 
+
+
+ 
+
+
+ • Nachteile: 
+
+
+ 
+
+
+ • IdP ist interessantes Phishing-Ziel 
+
+
+ 
+
+
+
+ • IdP sieht Surfverhalten des Benutzers 
+
+
+ 
+
+
+ • RP muss sich auf IdP verlassen oder 
+
+
+ 
+
+
+ User-Identität selbst prüfen 
+
+
+ 
+
+
+ (etwa bei Bezahldiensten) 
+
+
+ 
+
+
+ 
+
+
+56. Was ist Shiboleth und wofür wird es verwendet? Nennen Sie eine mögliche Nutzergruppe. 
+
+
+• Single-Sign On, z.B. von Hochschulen genutzt (Service Provider: Verlage) 
+
+
+• neben Authentifikation auch Autorisierung, z.B. Zugehörigkeit zu bestimmter Gruppe, sog. AAI – 
+
+
+Authentifizierungs- und Autorisierungs-Infrastruktur 
+
+
+ 
+
+
+ • IdP: Heimateinrichtung, bei der Benutzer einen Account hat, bildet sog. Föderation mit 
+
+
+ 
+
+
+ • RP: Service-, Ressourcen-Anbieter 
+
+
+ 
+
+
+• Where-Are-You-From (WAYF)-Service: 
+
+
+ 
+
+
+ • zentral gepflegte Liste der IdP, um Umleitung zu erleichtern (Service Provider kann aber 
+explizit zugelassene IdP definieren) 
+
+
+ 
+
+
+ 
+
+
+57. Was bedeutet SAML, und wer nutzt es? 
+
+
+• Security Assertion and Markup Language 
+
+
+• von Shibboleth genutzt in Schritt 3 zwischen Identity und Service Provider 
+
+
+ 
+
+
+ • Service Provider = „Relying Party“, vertraut Angaben des 
+
+
+ 
+
+
+ • Identity Provider = „Asserting Party“ (auch: SAML Authority) 
+
+
+ 
+
+
+ 
+
+
+58. Welche Typen von Assertions gibt es in der SAML? 
+
+
+ 
+
+
+ •Authentifikation („um wen handelt es sich?“, „wann und wie wurde er authentifiziert?“) 
+
+
+ 
+
+
+ • Autorisierung („darf Subjekt auf bestimmte Ressource zugreifen?“) 
+
+
+ 
+
+
+ • Attribute (Zusatzangaben zum Subjekt, z.B. Kreditlimit) 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+Webanwendungen 
+
+
+ 
+
+
+59. Nenne 3 Sicherheitsprobleme bei Webanwendungen und ihr Ansatzpunkt 
+(Webanwendungen Seite 6) 
+
+
+a. Phishing - Browser/Anwendung 
+
+
+b. Session Hijacking – Internet 
+
+
+c. SQL-Injection – Database server 
+
+
+ 
+
+
+60. Wie können bei http verschiedene Anfragen einem Kontext zugeordnet werden? 
+
+
+a. Session-Verwaltung über Cookies 
+
+
+ 
+
+
+61. Nenne eine Maßnahme, um die Sicherheit von http zu erhöhen und beschreibe diese 
+
+
+a. Maßnahme: Secure Flag – Cookies bei der die „secure Flag“ gesetzt ist, können nur über https 
+versendet 
+
+
+ 
+
+
+62. Was versteht man unter Web-Server-Spoofing? 
+
+
+--> Täuschung des Benutzers durch nachgemachte Seiten 
+
+
+ 
+
+
+63. Was versteht man unter einem Man-in-the-Middle-Angriff 
+
+
+a. Angreifer steht physisch oder logisch zwischen Kommunikationspartner und hat mit seinem 
+System Kontrolle über den Datenverkehr zwischen den Teilnehmern à kann Daten einsehen oder 
+manipulieren 
+
+
+ 
+
+
+64. Welche Sicherheitslücke bringen Cookies mit sich und warum? 
+
+
+a. Man-in-the-Middle-Angriff – Weil der Inhalt der Cookies als einfacher Text versendet wird 
+
+
+ 
+
+
+65. Ist es möglich auf hostfremde Dokumente mit AJAX zugreifen 
+
+
+a. Nein, wegen der Same Origin Policy 
+
+
+ 
+
+
+66. Wie kann man Same Origin Policy umgehen 
+
+
+a. Man-in-the-middle, Reverse Proxy, CrossSiteRequestForgery, Implementierungsfehler 
+ausnutzen 
+
+
+ 
+
+
+67. Nenne die Probleme der Same Origin Policy (Webanwendung Seite 20) 
+
+
+a. Anfälligkeit für Implementierungsfehler 
+
+
+b. Eingebundene Skripte Dritter 
+
+
+c. DNS Rebinding Attack 
+
+
+d. Cross-Site Request Forgery 
+
+
+ 
+
+
+68. Sicherheitsmechanismen eines Webservers 
+
+
+a. HSTS („HTTP Strict Transport Security) – Schützt z.B. vor Session Hijacking. Dabei teilt ein 
+Server mittels http response dem Client mit, in Zukunft für eine definierte Zeit (max-age), 
+ausschließlich verschlüsselte Verbindungen für diese Domain zu nutzen 
+
+
+ 
+
+
+69. Unterschied zwischen Basic und Digest Authentifizierung 
+
+
+a. Digest – Anmeldeinformationen Anmeldedaten mit Hash-Funktionen verschlüsselt und 
+übermittelt 
+
+
+b. Basic – Daten werden mit Base64 verschlüsselt und versendet 
+
+
+ 
+
+
+70. Nenne und beschreibe die Ziele von zwei Arten der SQL-Injection 
+
+
+a. Tautologie – Umgehen der Authentifikation, Extrahieren von Daten 
+
+
+b. Alternate Encoding – Filter täuschen, indem SQL-Statement codiert wird 
+
+
+
+c. Union Query 
+
+
+d. Peggy-backed queries (funktioniert nicht mehr, man muss es aber mal gehört haben) 
+
+
+ 
+
+
+71. Was sind Gegenmaßnahmen für SQL-Injections? 
+
+
+Prepared Statements für SQL, Filtern/Escapen von Sonderzeichen mit sicherer API 
+
+
+SQL Statement in prepared Statement umformulieren. 
+
+
+ 
+
+
+72. Was ist Second-Order-Injection? Bespiel. 
+
+
+- Stored procedures, die zu einem späteren Zeitpunkt ausgeführt werden. 
+
+
+ 
+
+
+73. Session-Verwaltung, wie sichert man Cookies über SSL? 
+
+
+ 
+
+
+ Secure flag, HTTPS 
+
+
+ 
+
+
+ 
+
+
+74. Complete Mediation/TOCTTOU 
+
+
+Time-of-Check-to-Time-of-Use-Problem, Bsp Amazon Bestellung nach 15 min 
+
+
+zum Zeitpunkt des Zugriffs Berechtigung des Nutzers prüfen 
+
+
+ 
+
+
+75. Security Misconfiguration und wie kan man damit verbundene Sicherheitslücken verhindern? 
+
+
+ 
+
+
+ -> Web-Server indexierung deaktivieren (Standardmäßig aktiviert) 
+
+
+ 
+
+
+ -> Web-Server-Version nicht mitschicken 
+
+
+ 
+
+
+ 
+
+
+76. Wie kann man Schwachstellen finden? Bsp DHBW-Seite 
+
+
+ 
+
+
+ -> Port-scanner (Netzwerkebene) 
+
+
+ 
+
+
+ -> Verschiedene tools, wie SSL-labs (Webanwendungsebene) 
+
+
+ 
+
+
+ 
+
+
+77. Ein in der Datei http://www.example.com/dir/page.html eingebettetes Skript versucht, auf ein 
+Element in den folgenden Seiten zuzugreifen: 
+
+
+ - http://www.example.com/dir/page2.html 
+
+
+ - http://www.example.com/dir2/other.html 
+
+
+ - http://username:password@www.example.com/dir2/other.html 
+
+
+ - http://www.example.com:81/dir/other.html 
+
+
+ - https://www.example.com/dir/other.html 
+
+
+ - http://en.example.com/dir/other.html 
+
+
+ - http://example.com/dir/other.html 
+
+
+ - http://v2.www.example.com/dir/other.html 
+
+
+ - http://www.example.com:80/dir/other.html 
+
+
+ Welche der Seiten können unter Betrachtung der Same Origin Policy erreicht werden? 
+
+
+ 
+
+
+ -> 
+
+
+ - http://www.example.com/dir/page2.html 
+
+
+ - http://www.example.com/dir2/other.html 
+
+
+ Erklärung unter ( https://de.wikipedia.org/wiki/Same-Origin-Policy https://imgur.com/labng03) 
+
+
+ 
+
+
+ (Protokoll, Hostname und Port müssen gleich sein) 
+
+
+
+
+
+ 
+
+
+78. Ihr Opa Arnt hat sich einen nagelneuen angebissenen Apfel gekauft und denkt sein PC sei frei 
+von allen Sicherheitslücken und Fehler. Nennen Sie ihrem Opa mindestens einen schwerwiegenden 
+Sicherheitslücke in seinen "tollen" Gerät. 
+
+
+-> z.B. Spectre 
+
+
+ 
+
+
+79. Sie haben einen sehr neugierigen Mitbewohner, der gerne ihren Whatsapp-Chatverlauf lesen 
+würde. Sie lassen ihr älteres Android Samsung Smartphone in der Küche liegen, während Sie auf 
+Klo gehen. Als Sie wiederkommen ließt ihr Mitbewohner ihre Nachrichten. Was haben Sie falsch 
+gemacht? 
+
+
+-> Viele alte Smartphones (vorallem Samsung) oder Smartphones mit Custom ROMs haben einen 
+offen Bootloader. Das ermöglicht den Sideload einer Recovery. Ist das Telefon unverschlüsselt kann 
+ihr Mitbewohner das Password einfach entfernen 
+
+
+ 
+
+
+80. 
+
+
+Michael (24) nutzt das Eingabefeld des Wendy Forums, um Java-Script Code in den Web-
+Anwendungscode einzuschleusen. Durch den Code werden unbemerkt tausende Festplatten auf den 
+Computern der jungen Nutzer nach Passwörtern durchsucht und an Michaels Server gesendet. Um 
+welche Angriffs-Art der OWASP TOP 10 handelt es sich und was ist ihre Schwachstelle? 
+
+
+ 
+
+
+--> Cross Site Scripting (XSS) 
+
+
+ 
+
+
+81. Unterschiede zwischen stored und reflected Cross Site Scripting 
+
+
+ 
+
+
+ -Sicherheitsmaßnahmen: Nutzer-generierten Content prüfen. 
+
+
+ 
+
+
+ 
+
+
+82. Forum-Geschichte: prüfen, ob der Angriff ein XSS ist und ob der Angriff funktioniert. 
+
+
+ 
+
+
+ 
+
+
+83. Welche Möglichkeiten gibt es, die OWAS Top 10 zu klassifizieren (Webanwendungen S.24) 
+
+
+a. Attack Vectors 
+
+
+b. Weakness Prevalence 
+
+
+c. Weakness Detectability 
+
+
+d. Technical Impacts 
+
+
+ 
+
+
+84. Wie kann man durch XSS eine Session übernehmen? 
+
+
+a. Formularfeld finden 
+
+
+b. Skript einfügen, welches das Session-Cookie an eine eigene Webadresse weiterleitet 
+
+
+c. Session-Id aus Cookie extrahieren 
+
+
+ 
+
+
+85. Welche Schwachstelle wird bei der Broken Authentication & Session Mgmt eingesetzt 
+(S.32) 
+
+
+a. Unsichere Sitzungsverwaltung (Login, Logout) kritische Daten werden über 
+unverschlüsseltes http verschickt, Session nicht an Browser gebunden, schwache Session-ID 
+
+
+86. Auf welchen drei Schichten des OSI-Modells sind Session Hijacking, SQL-Injection und 
+XSS möglich? 
+
+
+a. Application (7), Presenation (6), Session (5) 
+
+
+87. Nenne einen Bereich in dem SQL Injection eine große wirtschaftliche Konsequenz hat bzw. 
+keine große Konsequenz 
+
+
+a. Große Konsequenz: Gehacktes Finanzportal, in allen Bereichen mit sensiblen Daten 
+
+
+
+b. Keine Konsequenz: Vergessener Server mit Webseiten und sonst keinen wichtigen Daten 
+
+
+ 
+
+
+88. Dein Unternehmen „Deutsche Hahn“ bekommt einen neuen Server auf dem Beispiel-
+Anwendungen installiert sind, die nicht vom Server gelöscht werden. Welche Probleme können 
+dadurch entstehen? 
+
+
+a. Security Misconfiguration: Die Beispiel-Anwendungen können bekannte Sicherheitslücken 
+beinhalten, die Hacker als Schwachstelle ausnutzen können. 
+
+
+ 
+
+
+89. Schließt HSTS Sicherheitslücken wie SSL Downgrading komplett und wenn ja warum? 
+Erläutern Sie die Funktionsweise von HSTS. 
+
+
+a. Ja 
+
+
+ 
+
+
+ 
+
+
+Anwendungssicherheit 
+
+
+ 
+
+
+90. Codeschnipsel in dem man Security Sünde finden muss. z.B. sowas: 
+https://www.welivesecurity.com/2017/01/30/examples-vulnerable-code-find/ 
+
+
+Kann auch SQL Injection sein, wenns einfach sein soll. 
+
+
+ 
+
+
+app.post("/start", function(req, res) { 
+
+
+ var data = db.getData("/teilnehmer"); 
+
+
+ var numbers = []; 
+
+
+ for (var i = 0; i < data.length; i++){ 
+
+
+ var obj = data[i]; 
+
+
+ numbers.push(obj.number) 
+
+
+ } 
+
+
+ var pick = Math.floor(Math.random() * (numbers.length)); 
+
+
+ db.push("/result", { winner: numbers[pick] }); 
+
+
+ res.redirect("/") 
+
+
+}) 
+
+
+ 
+
+
+app.controller('resultCtrl', function($scope, $http) { 
+
+
+ $http.post("/result") 
+
+
+ .then(function(response) { 
+
+
+ $scope.text = response.data; 
+
+
+ if($scope.text === "") { 
+
+
+ $scope.disableSubmit = false; 
+
+
+ } else { 
+
+
+ $scope.disableSubmit = true; 
+
+
+ } 
+
+
+ }); 
+
+
+}); 
+
+
+ 
+
+
+--> Die "start" funktion wird nur im frontend deaktiviert. Über Curl lässt sie sich beliebig oft von 
+jedem ausführen 
+
+
+ 
+
+
+ 
+
+
+91. Sehr viele aktuelle Angriffe basieren auf Pufferüberläufen, engl. Buffer Overflows. 
+
+
+ 
+
+
+ Was passiert bei einem Buffer-Overflow genau? Wie kann ein Hacker diesen ausnutzen? 
+Erläutern Sie stichpunktartig. 
+
+
+ 
+
+
+
+ 92. Folgendes Programm ist gegeben: 
+
+
+ 
+
+
+ #include <stdio.h> 
+
+
+ 
+
+
+ int test() { 
+
+
+ 
+
+
+ // initialisiere ein Array mit nur einem Eintrag 
+
+
+ 
+
+
+ int i[1] = {42}; 
+
+
+ 
+
+
+ ... 
+
+
+ 
+
+
+ // Ausgabe des Array und Ende 
+
+
+ 
+
+
+ printf("test: i[0] = %i\n\n", i[0]); 
+
+
+ 
+
+
+ return i[0]; 
+
+
+ 
+
+
+ // -> Rücksprung ins aufrufende Programm 
+
+
+ 
+
+
+ } 
+
+
+ 
+
+
+ int main() { 
+
+
+ 
+
+
+ // initialisiere x, x sollte im Nachhinein den Wert 42 haben 
+
+
+ 
+
+
+ int x = test(); 
+
+
+ 
+
+
+ printf("Dies ist ein Testprogramm.\n"); 
+
+
+ 
+
+
+ printf("Es demonstriert einen Puffer-Überlauf.\n\n"); 
+
+
+ 
+
+
+ // inkrementiere x, neuer Wert von x sollte 43 sein 
+
+
+ 
+
+
+ x++; 
+
+
+ 
+
+
+ // Ausgabe von x und Ende 
+
+
+ 
+
+
+ printf("main: x = %i\n", x); 
+
+
+ 
+
+
+ return 0; 
+
+
+ 
+
+
+ } 
+
+
+ 
+
+
+ (i) Ergänzen Sie das Programm an der gekennzeichneten Stelle so, dass die Inkrementie- rung 
+von x in der main()-Routine nicht ausgeführt wird! Erklären Sie das Phänomen. 
+
+
+ 
+
+
+93. Was ist ein AAA-System/-Infrastruktur? Erkläre kurz die drei A’s. 
+
+ 
+
+Das Triple-A-System hat vorrangig die Aufgabe, Netzelemente im Transportnetz zu steuern und 
+von diesen Netzelementen erfasste Nutzungsdaten zu sammeln oder Zugriffe darauf zu gewähren 
+oder zu verwehren. 
+
+ 
+
+
+Authentifizierung: Identität des Nutzers wird geprüft. 
+
+Autorisierung: Rechte des Nutzers wird geprüft. 
+
+Accounting: Dokumentation der Nutzung eines Dienstes durch einen Nutzer 
+
+ 
+
+94. (englische und deutsche Begriffe wichtig): Nennen Sie je ein Beispiel für die vier Systematiken-Typen für Bedrohungen und Angriffe 
+(RFC4949) (Unterscheidung je nach Bedrohung und Ziel): 
+
+ 
+
+Antwort: 
+
+- Unauthorized Disclosure (unautorisierte Informationsgewinnung) 
+. Exposure (z.B. un/beabsichtigte Weitergabe sensitiver Daten) 
+- Deception (Täuschung) 
+. Masquerade (Maskierung, z.B. Spoofing, Trojanisches Pferd) 
+- Disruption (Unterbrechung, Störung) 
+. Corruption (Verfälschung: Tampering = gezielte Änderungen am System) 
+- Usurpation (widerrechtliche Aneignung) 
+. Misuse (Missbrauch z.B. durch Überschreitung der eigenen Berechtigungen) 
+
+
+ 
+
+95. Beschreiben Sie, wie ein Angreifer Z den Netzwerkverkehr zwischen zwei anderen 
+Netzwerkteilnehmern A und B mittels ARP Spoofing / ARP Cache Poisoning mitlesen kann. 
+
+ 
+
+Z sendet gefälschte ARP Pakete an A und B, sodass sodass diese in ihrem ARP Cache jeweils die 
+IP-Adresse des jeweils anderen mit der MAC Adresse des Angreifers assoziieren. Dadurch werden 
+die Pakete zwischen A und B an Z adressiert. Dieser kann die Pakete dann auslesen und 
+anschließend zustellen. 
+
+ 
+
+96. Nenne drei Arten der Prävention für Ransomware und erkläre eine. 
+Was halten Sie von technischen Schutzmaßnahmen gegen Ransomware? Wie könnten diese 
+aussehen? 
+
+ 
+
+Antwort: 
+
+• Mitarbeiter-Sensibilisierung gegen Spam 
+• Technische Schutzmaßnahmen gegen Spam 
+• Installation aller Sicherheitsupdates 
+• Netzsegmentierung 
+• Eingeschränkte Freigaben 
+• Starke Admin-Passwörter 
+• Umfangreiches Backup-Konzept 
+
+
+ 
+
+ 
+
+97. In welchen drei Layern des OSI-Modells sind Session Hijacking, SQL-Injection und Cross-Site-
+Scripting (XSS) möglich? Erklären Sie warum im Layer 4 kein XSS möglich ist. 
+
+ 
+
+Antwort: Application (Layer 7), Presentation (Layer 6) und Session (Layer 5) 
+
+ 
+
+98. Welche Arten von Verschlüsselungsverfahren werden in der Regel von Ransomware 
+eingesetzt? Nennen Sie beide Verfahren und erklären Sie eines. 
+
+ 
+
+Antwort: Es werden hybride Verschlüsselungsverfahren eingesetzt. 
+
+- symmetrische Verschlu¨sselung von Daten (z.B. AES) 
+- asymmetrisches Verschlu¨sselung von Daten (z.B. RSA) 
+
+
+ 
+
+99. Welche Varianten des Schlüsselaustauschs werden in der Regel von Ransomware eingesetzt. 
+
+ 
+
+Antwort: Es wird zwischen zwei grundsätzlichen Varianten unterschieden: 
+
+Erste Variante: 
+
+
+
+o Erzeugung eines Schlu¨sselpaarsauf infiziertem System 
+o Private Key auf Steuerungs-Server des Angreifers hinterlegen 
+o Public Key für Datenverschlüsselung verwenden (mit symm. Session Keys) 
+o Schadprogramm enthält bereits Public Key des Angreifers – kein 
+Schlüsselaustausch mit Steuerungs-Server erforderlich 
+a. Täuschung von Benutzern durch nachgemachte Seite 
+b. Typejacking - ebai.de statt ebay.de 
+c. Nachbau von Browser-Sicherheits-Anzeigen 
+a. Cookies 
+b. URL Rewriting 
+c. Hidden Form Fields 
+
+
+
+
+
+Erste Variante: 
+
+
+100. Mit SYN-Flooding kann ein DoS Angriff auf einen Zielrechner ausgeführt werden. 
+Beschreiben Sie, wie. 
+
+Antwort: 
+
+Der Angreifer sendet nichtterminierte TCP-Handshakes an den Zielrechner. Diese belegen 
+Ressourcen auf dem Zielrechner, da dieser noch auf das Zustandekommen der Verbindung 
+wartet. Dadurch, dass sehr viele dieser Anfragen gesendet werden, werden diese Ressourcen 
+aufgebraucht, wodurch sich keine anderen Clients mehr mit dem Zielrechner verbinden können. 
+
+ 
+
+101. Was für eine Angriffsart ist der Man-in-the-Browser und wie kann ein solcher Angriff 
+ablaufen? 
+
+ 
+
+Antwort: Ist ein Man-in-the-middle Angriff (MITM-Angriff). Der Browser wird um ein Script erweitert 
+(Trojaner, der den Browser infiziert) und so die geladene Original-Seite modifiziert bevor sie 
+geladen wird. Eingegebene Daten (wie z.B. Passwörter) werden dann an die Seite des Angreifers 
+gesendet. Dabei werden möglicherweise verräterische Antworten der Original-Seite angepasst. 
+
+ 
+
+102. Erklären Sie Web-Server-Spoofing und nennen und erklären Sie zwei verschiedene 
+Angriffsmöglichkeiten 
+
+ 
+
+103. Welche Möglichkeiten gibt es, eine Session-Verwaltung für HTTP zu implementieren? 
+Nennen und beschreiben Sie deren Funktionsweise. 
+
